@@ -1,0 +1,1196 @@
+*{  
+    font-family: "Roboto", serif;
+    box-sizing:border-box;
+    margin: 0%;
+    padding: 0%;
+    /* font-family: "Salsa", serif; */
+    /* font-family: "Style Script", serif; */
+    /* font-family: "Poppins", serif; */
+    /* font-family: "DM Sans", serif; */
+    /* font-family: "Barlow Semi Condensed", serif; */
+}
+html{
+    font-size:100%;
+}
+.body{
+    width:100vw;
+    height:100vh;
+}
+/* NavBar section here...................... */
+nav{
+    position: relative;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FAFAFA;
+    position: sticky;
+    top: 0; /* The navbar will stick to the top of the page */
+    z-index: 1000; /* Make sure it stays above other content */
+}
+nav .under-nav{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav .under-nav img{
+    width:9rem;
+    height: 100%;
+    object-fit: cover;
+}
+nav .under-nav ul{
+   display: flex;
+   gap:2rem;
+   padding-right: 1rem;
+}
+nav .under-nav ul li{
+    list-style: none;
+}
+nav .under-nav ul i{
+    font-size:2rem;
+    font-weight: 700;
+    display: none;
+}
+nav .under-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav .under-nav ul li a:hover{
+   color:#DC8D3F;
+   transition:0.3s;
+}
+
+/* Drop down....... */
+.drop-div {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #drop-down {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 30;
+    right: 0%;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+  }
+  
+  #drop-down li {
+    width:100%;
+    padding: 8px 16px;
+    text-align: left;
+  }
+  #drop-down li:hover{
+    background-color: #DC8D3F;
+  }
+  #drop-down li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  #drop-down li a:hover {
+    color: white;
+  }
+  
+  .drop-div:hover #drop-down {
+    display: block;
+  }
+
+/* Hero section here............................. */
+header{
+    /* height:600px; */
+    display: flex;
+    justify-content: center;
+    padding-bottom:4rem;
+}
+header .container{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:8rem;
+}
+header .container-under{
+    max-width:50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    
+}
+header .container-under h3{
+    letter-spacing: 2px;
+}
+header .container-under h1{
+    letter-spacing: 5px;
+    font-size:3rem;
+    margin:0.2rem 0px;
+}
+ header .container-under p{
+    font-weight: 500;
+    word-spacing:10px;
+    color: gray;
+}
+header .action{
+    display: flex;
+    column-gap: 1rem;
+}
+header .action .work-btn,.hire-btn,#work-btn{
+    padding:0.8rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+header .action .work-btn,#work-btn{
+    background-color: #DC8D3F;
+    color: white;
+}
+header .action .hire-btn{
+    background-color: white;
+    color:#DC8D3F;
+    border:2px solid #DC8D3F;
+}
+header .action .work-btn:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+header .action .hire-btn:hover{
+    background-color: #DC8D3F;
+    color: white;
+    transition: 0.5s;
+}
+.portfolio-img{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width:100%;
+ }
+.img-circle{
+    width:70%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    /* background-color: rgba(95, 111, 108, 0.8); */
+    background: linear-gradient(45deg, rgb(40, 29, 50), rgb(90, 132, 90));
+    position: relative;
+    transition: all;
+    transition-duration:0.5s;
+    transition-timing-function: linear;
+    
+}
+.img-circle:hover{
+    transform: scale(1.05);
+}
+.img-circle img{
+    width:100%;
+    object-fit: cover;
+    transform: translatex(-10px);
+}
+
+/* About-me Section here.......................... */
+.about-me{
+    background-color:#EAEDF2;
+    display: flex;
+    justify-content: center;
+}
+.about-me .container{
+    width:80%;
+    height:100%;
+    padding: 5rem 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+}
+.about-me .container .me{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.about-me .container .me p{
+    letter-spacing: 4px;
+}
+.about-box{
+    display: flex;
+    column-gap: 3rem;
+}
+.about-box-left{
+    width: 600px;
+    min-width: 300px;
+    background-color: white;
+    padding:15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.about-box-left img{
+    width:100%;
+}
+.about-box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.about-box-right p{
+    letter-spacing: 2px;
+}
+.about-box-left img{
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.about-box-left img:hover{
+   transform: scale(1.1)
+}
+.about-box-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:0.5rem;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width:50px;
+    padding: 1rem 0px;
+}
+.about-box-icon button{
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #DC8D3F;
+    color: white;
+    transition: all;
+    transition-duration:0.5s;
+    transition-timing-function: linear;
+}
+.about-box-icon button:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.about-box-icon button i:hover{
+    transform: scale(1.1);
+}
+.about-address{
+    display: flex;
+    column-gap: 6rem;
+}
+.about-address h5{
+font-weight: 800;
+font-size: 0.9rem;
+}
+.about-address span{
+    display: block;
+}
+.about-address-left{
+    display: flex;
+    column-gap: 3rem;
+}
+.about-address-left-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.about-address-left-right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.28rem;
+}
+
+/* My skills section............................... */
+.skills{
+  
+    display: flex;
+    justify-content: center;
+}
+.skills .container{
+    width:80%;
+    padding: 5rem 0px 8rem;
+}
+.skills .container .me{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem; 
+}
+.skills .container .me p{
+    letter-spacing:4px;
+}
+.skills .container-under{
+    display: flex;
+    column-gap:3rem;
+    margin-top: 2rem;
+}
+.skill-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    width:50%;
+}
+.skill-left .sp{
+    font-size:1.5rem;
+}
+.skills-line{
+    display: flex;
+    flex-direction: column;
+    row-gap:1.5rem;
+}
+.skills-horizental-line{
+    display: flex;
+    flex-direction: column;
+    
+}
+.skills-horizental-line .skills-per{
+    width:100%;
+    height:6px;
+    border-radius: 10px;
+    background-color:#EAEDF2;
+}
+.skills-per div{
+    background-color: #DC8D3F;
+    height:100%;
+}
+.skils-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.skills-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    border: 3px solid #DC8D3F;
+    padding: 1.5rem 2rem;
+}
+.skills-box i{
+    font-size: 2rem;
+    color: #DC8D3F;
+}
+.skills-right-upper,.skills-right-down{
+    display: flex;
+    column-gap: 2rem;
+    
+}
+
+
+/* Recent Work Sections............ */
+.recent-work{
+    display: flex;
+    justify-content: center;
+}
+.recent-work .container{
+    width:80%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+ .work-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align:center;
+}
+ .work-text h1{
+    letter-spacing: 3px;
+    width:60%;
+    margin: 0% auto;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+ .work-text span{
+    width:40%;
+    letter-spacing: 3px;
+    margin: 0% auto;
+}
+.container .drag{
+    
+    width:100% ;
+    height: 30px;
+    font-size:1.2rem;
+    letter-spacing: 3px;
+   
+}
+.recent-work .work-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.recent-work #work-btn{
+    width:fit-content;
+    margin: 0% auto;
+    border-radius:40px;
+}
+.recent-work #work-btn:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.work-container .work-card,.service-btn{
+    width:30%;
+    max-height:500px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.work-container .work-card .work-card-first{
+    transition-property: all;
+    transition-duration:4s;
+    transition-timing-function:ease-in-out;
+}
+.work-container .work-card .work-card-first:hover{
+    transform: translatey(-1200px);
+    /* transition: 6s; */
+}
+.work-container .work-card .work-card-second{
+    transition-property: all;
+    transition-duration:3s;
+    transition-timing-function:ease-in-out;
+}
+.work-container .work-card .work-card-second:hover{
+    transform: translatey(-600px);
+    /* transition: 6s; */
+}
+.work-container .work-card .work-card-third{
+    transition-property: all;
+    transition-duration:2s;
+    transition-timing-function:ease-in-out;
+}
+.work-container .work-card .work-card-third:hover{
+    transform: translatey(-270px);
+    /* transition: 6s; */
+}
+
+/* Our Services Section ..................*/
+.services{
+    display: flex;
+    justify-content: center;
+    background-color:#EAEDF2;
+}
+.services .container{
+    width:80%;
+    padding:3rem 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.services .container div{
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.services .services-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top:2rem;
+    flex-wrap: wrap;
+}
+.services-container .services-box{
+    width:45%;
+    background-color:white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    border-radius: 10px;
+}
+.services-box-icon{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.services-box-icon img{
+    width:30%;
+}
+.services-box-icon h1{
+    font-weight: 400;
+    font-size:1.5vw;
+}
+.services-box p{
+    
+    font-size:0.9rem;
+    line-height: 20px;
+}
+.services-box button{
+    width:fit-content;
+    border: none;
+    padding:0.7rem 2rem;
+    background-color: #DC8D3F;
+    color: white;
+    font-size:1rem;
+    border-radius:20px;
+    margin: 0% auto;
+}
+.services-box button:hover{
+    background-color: black;
+    transition:0.7s;
+}
+.service-btn{
+   padding: 1rem 2rem;
+   font-size: 1rem;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   background-color: #DC8D3F;
+   color: white;
+   width: fit-content;
+}
+.service-ancher{
+    margin: 0% auto;
+}
+.service-btn:hover{
+    background-color: black;
+    transition: 0.8s;
+}
+
+/* Testinomial Section................. */
+.textimonial{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+.textimonial .container{
+    width:80%;
+    padding: 6rem 0px;
+    
+}
+.text-me{
+    display: flex;
+    flex-direction: column;
+    row-gap:1rem;
+}
+#test-cl{
+    width:70%;
+    line-height:25px;
+    letter-spacing:2px;
+}
+.textimonial-container{
+    display: flex;
+    column-gap:1rem;
+    margin-top:2rem;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;
+}
+.textimonial-box{
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#EAEDF2;
+    min-width:50%;
+    padding: 2rem;
+    scroll-snap-align: start;
+}
+.textimonial-box img{
+    max-width:100%;
+    width:300px;
+    min-width:100px;
+    border-radius: 50% 0px 50% 50%;
+}
+.textimonial-box .textimonial-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.textimonial-text span{
+    width:100%;
+}
+
+/* Lets Connect Section......... */
+.connect{
+    display: flex;
+    justify-content: center;
+    background-color:#EAEDF2;
+}
+.connect .container{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:4rem 0;
+}
+#let-connect h2 font{
+    font-weight: 500;
+    font-size:3rem;
+}
+#let-connect button{
+    width:fit-content;
+    padding:1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #DC8D3F;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0% auto;
+    cursor: pointer;
+}
+#let-connect button a{
+    color: white;
+    text-decoration: none;
+    
+}
+#let-connect button:hover{
+    background-color: black;
+    transition:0.7s;
+}
+#let-connect span{
+    width:100%;
+}
+
+/* Latest Blogs......... */
+.latest-blog{
+    display: flex;
+    justify-content: center;
+}
+.latest-blog .container{
+    width:80%;
+    height:100%;
+    padding:4rem 0;
+}
+.latest-container{
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    margin-top: 3rem;
+}
+.latest-boxes{
+    display: flex;
+    column-gap: 2rem;
+    background-color: #F5F5F5;
+}
+.latest-box{
+    display: flex;
+    height:400px;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+    width:50%;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.latest-box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap:2rem;
+    max-width:50%;
+}
+.latest-box-text button{
+    padding:1rem 1.5rem;
+    border:2px solid pink;
+    background-color: #DC8D3F;
+    width:fit-content;
+    border-radius: 40px;
+    margin: 0% auto;
+    color: white;
+    font-size: 1rem;
+}
+.latest-box-text button:hover{
+    background-color:white;
+    color: palevioletred;
+    transition: 0.7s;
+}
+#blog-btn{
+    margin-top: 50px;
+    margin-left: 45%;
+}
+.latest-box-img{
+    max-width:50%;
+    height:100%;
+    overflow: hidden;
+}
+.latest-box-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: all 0.5s linear;
+}
+.latest-box-img img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer section................ */
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+footer .container{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    color: white;
+}
+.footer-box-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width:33%;
+}
+.footer-box-1 p{
+    word-spacing:5px;
+    font-size: 1rem;
+}
+.footer-box-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width:33%;
+}
+.footer-box-2 ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footer-box-2 ul li{
+    list-style: none;
+}
+.footer-box-2 ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+}
+.footer-box-2 ul li a:hover{
+    color: palevioletred;
+    transition: 0.5s;
+}
+.footer-box-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width:33%;
+}
+.footer-one{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+.footer-two{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.footer-two div{
+    display: flex;
+    column-gap: 1rem;
+}
+.footer-two button{
+    width:60px;
+    height:60px;
+    padding: 1rem;
+    background-color: palevioletred;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.4s linear;
+}
+.footer-two button:hover{
+    background-color: pink;
+    transform: scale(1.1);
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:60px;
+    background-color: #00193A;
+    text-align: center;
+    color: white;
+}
+
+/* For others section............ */
+.about-page{
+    background-image: url(./Image/event-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height:500px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.about-page h1{
+      font-size: 4rem;
+      color: white;
+}
+
+
+/* Contect-me Section................ */
+.contect{
+    background-color: #E8EBF0;
+    display: flex;
+    justify-content: center;
+}
+.contect .container{
+    width:80%;
+    padding:4rem 0px;
+}
+.contect-container{
+    display: flex;
+    column-gap: 1rem;
+    margin: 2rem 0;
+}
+.contect-left-box{
+    width:60%;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contect-left-input form{
+    display: flex;
+    flex-direction: column;
+    row-gap:2.5rem;
+}
+.contect-left-input div{
+    display: flex;
+    column-gap:1rem;
+}
+.contect-left-input div .input{
+    width:50%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom:2px solid #ddd;
+}
+.contect-left-input .subject{
+    padding: 0.5rem;
+    border: none;
+    border-bottom:2px solid #ddd;
+}
+.contect-left-input .area{
+    border: none;
+    border-bottom:2px solid #ddd;
+}
+.massage-btn{
+    width: fit-content;
+    padding:1rem 1.5rem;
+    background-color: #DC8D3F;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+.massage-btn:hover{
+    background-color:black;
+    transition: 0.7s;
+}
+.contect-right-box{
+    display: flex;
+    flex-direction: column;
+    row-gap:2.5rem;
+    width:40%;
+}
+.contect-right-one{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+}
+.contect-right-one span{
+    color: gray;
+}
+.contect-right-one button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color:#DC8D3F;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+@media(max-width:950px){
+    html{
+        font-size:76%;
+    }
+    
+    /* nave section............ */
+    nav .under-nav ul i{
+        display:block;
+    }
+    nav .under-nav ul li{
+        display: none;
+    }
+    #drop-down li{
+        display: block;
+    }
+    /* Hero Section............ */
+    .img-circle{
+        width:80%;
+    }
+
+    /* Recent work section......... */
+    .recent-work .work-text h1{
+        width:100%;
+    }
+    .recent-work .work-text span{
+        width:80%;
+    }
+
+    /* Testnomial section */
+    .textimonial{
+        font-size:100%;
+    }
+    
+    /* Latest article section......... */
+    .latest-boxes{
+        flex-direction: column;
+        row-gap:2rem;
+    }
+    .latest-box{
+        width:100%;
+    }
+    .latest-box-text{
+        max-width:100%;
+        width:100%;
+    }
+    .latest-box-img{
+        max-width:100%;
+        width:100%;
+    }
+
+    /* Footer section........ */
+    footer .container{
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 3rem;
+        
+    }
+    .footer-box-1{
+        max-width:90%;
+    }
+
+    /* Contect us section.... */
+    .contect-container{
+        flex-direction: column;
+        row-gap:2rem;
+    }
+    .contect-left-box{
+        width:100%;
+    }
+    .contect-right-box{
+        width:100%;
+        font-size:100%;
+    }
+}
+@media(max-width:750px){
+    /* Hero Section............ */
+    header .container{
+        flex-direction: column;
+        align-items: start;
+        row-gap: 4rem;
+    }
+    header .container-under{
+        max-width:100%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        row-gap:2rem;
+        
+    }
+    .portfolio-img{
+        justify-content: center;
+    }
+
+    .img-circle{
+        width:80%;
+        min-width:300px;
+        align-items: center;
+    }
+
+    /* about-me section.......... */
+    .about-box{
+        display: flex;
+        flex-direction: column;
+        row-gap:2rem;
+        align-items: center;
+    }
+    .about-box-left{
+        width: 100%;
+        
+        background-color: white;
+        padding:15px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .about-box-left img{
+        width:100%;
+    }
+
+    /* my skills sections............ */
+    .skills .container-under{
+       flex-direction: column;
+       row-gap:3rem;
+    }
+    .skill-left{
+        width:100%;
+    }
+
+    /* my recent work......... */
+    .work-container .work-card{
+        width:100%;
+        height:400px;
+    }
+    
+    /* Services Section ............ */
+    .services .services-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .services-container .services-box{
+        width:100%;
+    }
+    .services-text h1{
+        width:100%;
+    }
+    .services-text span{
+        width:100%;
+    }
+    .services .container div{
+        flex-direction: column;
+        row-gap:2rem;
+    }
+    /* testinomial section ..........*/
+    .textimonial-box{
+        min-width:100%;
+        width:100%;
+    }
+    #test-cl{
+        width:90%;
+        line-height:12px;
+        letter-spacing:2px;
+    }
+
+    /* Latest blog sections.... */
+    .latest-box{
+       flex-direction: column;
+    }
+
+    /* footer section......... */
+    .footer-box-1{
+        max-width:100%;
+    }
+    .footer-box-2{
+        max-width:100%;
+    }
+    .footer-box-3{
+        max-width:100%;
+    }
+    .recent-work .work-text span{
+        width:100%;
+    }
+   
+    /* Contect Section */
+    .contect-left-input div{
+       flex-direction: column;
+       row-gap: 2rem;
+    }
+    .contect-left-input div .input{
+        width:100%;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size:70%;
+    }
+    /* Hero Section............ */
+    .img-circle{
+        width:80%;
+        min-width:250px;
+        align-items: center;
+    }
+    header .container-under p{
+        font-size: 1.2rem;
+    }
+    .about-me{
+        font-size:13px;
+    }
+    /* my skills sections............ */
+    .skills-right-upper,.skills-right-down{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        width:100%;
+    }
+    .skills-box{
+        width:100%;
+    }
+    /* Recent work here.......... */
+    .work-container .work-card{
+        width:100%;
+        height:300px;
+       
+    }
+    .recent-work .work-text h1{
+        font-size:1.8rem;
+    }
+    .recent-work .work-text span{
+        width:100%;
+    }
+
+    /* Testimonial secion........ */
+    .textimonial-box{
+        align-items: start;
+    }
+    .textimonial-box img{
+        max-width:100%;
+        min-width:30px;
+    }
+    #blog-btn{
+        margin-left: 25%;
+    }
+}
+
+@media(max-width:1090px){
+    .recent-work .work-container{
+        display: flex;
+        flex-direction: column;
+        row-gap:4rem;
+    }
+    .work-container .work-card{
+        width:80%;
+        max-height:500px;
+    }
+    /* testinomial */
+    .textimonial{
+        font-size:100%;
+    }
+    .contect-right-box{
+        font-size: 90%;
+    }
+}
